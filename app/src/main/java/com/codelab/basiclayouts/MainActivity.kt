@@ -153,13 +153,13 @@ fun FavoriteCollectionCard(
 fun AlignYourBodyRow(
     modifier: Modifier = Modifier
 ) {
-    LazyRow (
+    LazyRow(
         horizontalArrangement = Arrangement.spacedBy(8.dp),
-        contentPadding =  PaddingValues(horizontal = 16.dp), modifier = modifier
-    ){
-        items(alignYourBodyData){
-            item -> AlignYourBodyElement(item.drawable, item.text)
-
+        contentPadding = PaddingValues(horizontal = 16.dp),
+        modifier = modifier
+    ) {
+        items(alignYourBodyData) { item ->
+            AlignYourBodyElement(item.drawable, item.text)
         }
     }
 }
