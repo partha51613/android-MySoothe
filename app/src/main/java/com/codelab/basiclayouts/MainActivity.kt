@@ -54,9 +54,6 @@ fun SearchBar(
     // Implement composable here
     TextField(value = "Search",
         onValueChange = {},
-        modifier = modifier
-            .heightIn(min = 56.dp)
-            .fillMaxWidth(),
         leadingIcon = {
             Icon(
                 imageVector = Icons.Default.Search,
@@ -69,7 +66,8 @@ fun SearchBar(
         ),
         placeholder = {
             Text(stringResource(id = R.string.placeholder_search))
-        }
+        },
+        modifier = modifier.fillMaxWidth().heightIn(min=56.dp)
     )
 }
 
